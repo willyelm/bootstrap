@@ -118,7 +118,8 @@ const Util = (($) => {
     },
 
     reflow(element) {
-      new Function('bs', 'return bs')(element.offsetHeight)
+      // new Function('bs', 'return bs')(element.offsetHeight)
+      return () => element.offsetHeight
     },
 
     triggerTransitionEnd(element) {
