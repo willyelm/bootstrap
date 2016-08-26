@@ -123,7 +123,7 @@ var Util = (function ($) {
     },
 
     reflow: function reflow(element) {
-      new Function('bs', 'return bs')(element.offsetHeight);
+      // new Function('bs', 'return bs')(element.offsetHeight)
     },
 
     triggerTransitionEnd: function triggerTransitionEnd(element) {
